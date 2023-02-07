@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vemó-u</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" type="image/x-icon" href="img/logoVemou.ico">
+</head>
+<body>
+	<header>
+		<nav class="flex">
+			<div id="logo" class="flex">
+				<img id="vemou" src="img/logoVemou.png">
+				<h2>Vemó'u</h2>
+			</div>
+			<div id="menu" class="flex"></div>
+		</nav>
+	</header>
+	<div id="cont-home" data-ativo='true'>
+		<div id="prm-pag" class="flex">
+			<h1>Vemó'u?</h1>
+			<p>O web dicionario Vemó'u existe com o intuito de manter um registro da língua terena.</p>
+			<a id="acess-dicio">Acessar dicionario</a>
+		</div>
+		<div id="scd-pag" class="flex">
+			<img src="img/indigena-criança-cocar.jpg" class="img-cont">
+			<div id="scd-pag-text" class="flex pag-contend">
+				<h1 class="titulo">Brasil registra 274 línguas indigenas diferentes faladas por 305 etnias</h1>
+				<p class="text">Segundo dados do ultimo Censo Demografico realizado pelo Instituto Brasileiro de Geografia e Estatistica (IBGE) em 2010, o Brasil registrou a existencia de 274 línguas indigenas no país, onde vivem 817.963 mil indigenas de 305 etnias diferentes</p>
+				<a id="link" target="_blank" href="https:\\www.gov.br/funai/pt-br/assuntos/noticias/2022-02/brasil-registra-274-linguas-indigenas-diferentes-faladas-por-305-etnias">Fonte: www.gov.br/funai/pt-br/assuntos/noticias/2022-02/brasil-registra-274-linguas-indigenas-diferentes-faladas-por-305-etnias</a>
+			</div>
+		</div>
+		<div id="trt-pag" class="flex">
+			<div id="trt-pag-text" class="flex pag-contend">
+				<h1 class="titulo">Qual a importancia do Vemo'ú?</h1>
+				<p class="text">A cultura de um povo é a sua língua! Sua história, costumes, tradições e a língua indigena estão morrendo, por vários motivos e com isso a sua cultura, toda a história de um povo gira em torno da sua língua, sua identidade.</p>
+				<p class="text">Por isso, o web dicionário Vemó'u tem como objetivo a preservação da língua terena e futuramente de outras línguas indigenas também</p>
+			</div>
+		</div>
+		<div id="qrt-pag" class="flex">
+			<div class="flex profile">
+				<img id="isakkj" class="pfp" src="img/soninho.png" data-ativo='false'>
+				<div id="isaText" class="flex eu">
+					<h2>Isaias Avila</h2>
+					<p>Indigena terena, 19 anos, programador, desenhista... ah! Espera, esse é o outro, porém sono, muito sono</p>
+				</div>
+			</div>
+
+			<div class="flex profile">
+				<img id="euk" class="pfp" src="img/euk.jpg" data-ativo='true'>
+				<div id="euText" class="flex eu">
+					<h2>Euisakkj</h2>
+					<p>Fraco, cansado e sem energia</p><br>
+					<p>Mas chega de falar sobre você, siga minhas artes no twitter, ou em algum lugar que eu poste elas!</p>
+					<a href="https://twitter.com/FlaviaLrp" target="_blank">Artezinha pela @FlaviaLrp no Twitter</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="cont-dicio" class="flex" data-ativo='false'>
+		<div id="alph" class="flex">
+			<h1>Alfabeto</h1>
+			<h2 class="alfabeto" id="item-1" data-ativo='true'>Terena</h2>
+			<h2 class="alfabeto" id="item-2" data-ativo='false'>Português</h2>
+			<input  id="idioma" type="range" value="0" min="0" max="1">
+		</div>
+		<div id="palavras" class="flex"></div>
+		</div>
+	</div>
+	
+	<footer>
+		<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+		<script defer type="text/javascript" src="js/firebase.js"></script>
+		<script type="text/javascript" src="https://github.com/EuIsaEu/vemo-u/blob/main/script.js"></script>
+		<script type="text/javascript" src="js/features.js"></script>
+	</footer>
+</body>
+</html>
